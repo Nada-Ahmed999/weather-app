@@ -34,10 +34,13 @@ fetch(url)
     .then((res) => {
         if (res.status !== 200) {
             let error = document.querySelector(".content-weather form .error");
-            error.style.display = "flex";
-            let out=document.querySelector(".content-weather form .error [alt='out']");
+            error.style.display = "block";
+            let overlay = document.querySelector(".overlay")
+            overlay.style.display = "block";
+            let out=document.querySelector(" .content-weather form .error button");
             out.addEventListener("click", function () {
                 error.style.display = "none";
+                overlay.style.display = "none";
                 
             })
         }
@@ -236,7 +239,7 @@ inputcountry.addEventListener("input", function(){
     listcountry.appendChild(thelist)
     }
     if(pu.length === 0){
-        listcountry.innerHTML = "<div>not found country</div>";
+        listcountry.style.display = "none";
     }
     let chooes = document.querySelectorAll(".thelist");
     if (document.querySelectorAll(".thelist")) {
