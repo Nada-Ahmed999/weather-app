@@ -143,7 +143,7 @@ fetch(url)
         
         if (location.slice(11, 13) > 12) {
             localtime.textContent = `${+hour - 12}:${secound} PM`;//time>12 ==>pm
-        } else if (hour == 00) {
+        } else if (hour == "00") {
             localtime.textContent = `${+hour + 12}:${+secound} AM`;//time == 24 ==>12 am
         } else if (hour == 12) {
             localtime.textContent = `${time} PM`; //time == 12 ==>pm

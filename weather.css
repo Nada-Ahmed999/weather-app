@@ -118,6 +118,7 @@ color: white;
             top: 20%;
             display: none;
             width: 45%;
+            height: 88%;
         }
         .content-weather form .error button{
             background-color: #777c9c;
@@ -135,6 +136,7 @@ color: white;
         }
 .content-weather form .error img{
     width: 100%;
+    height: 60%;
 }
 .content-weather form .error p{
     font-size: 25px;
