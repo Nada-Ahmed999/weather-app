@@ -1,3 +1,6 @@
+body{
+    margin: 0px;
+}
 .overlay{
 background-color: #000000cd;
     width: 100%;
@@ -114,10 +117,10 @@ color: white;
 .content-weather form .error{
     position: fixed;
     z-index: 200;
-    right: 28%;
+    right: 22%;
             top: 20%;
             display: none;
-            width: 45%;
+            width: 50%;
             height: 88%;
         }
         .content-weather form .error button{
@@ -236,7 +239,6 @@ display: flex;
     .astro{
         display: block;
         font-size: large;
-        text-align: center;
     }
 }
 .astro div{
@@ -395,6 +397,9 @@ background-color: #4c4848;
     .footer-weather form{
         padding: 15px;
     }
+        .content-weather .info-day{
+            width: 72%;
+        }
 }
 .icon-media{
     margin-left: 25px;
@@ -473,4 +478,66 @@ background-color: #4c4848;
 .contact-mail form input[type="text"],
 .contact-mail form textarea{
     width: 75%;
+}
+
+/* media */
+ @media(max-width:400px) {
+
+     .content-weather .info-day .head-part p,
+     .weather .header .icon .text p {
+         font-size: 12px;
+     }
+
+     .weather .header .icon img {
+         width: 80px;
+         height: 80px;
+         margin-top: 20px;
+     }
+         .content-weather .condition img{
+            width:40%;
+            height:40%;
+         }
+                 .content-weather .condition .text{
+                    font-size: 18px;
+                 }
+            .content-weather .temp{
+font-size: 30px;
+    margin-top: 32%;
+            }
+            .astro{
+                font-size: 13px;
+            }
+                        .content-weather .info-day{
+                            width: 85%;
+                        }
+.nextday{
+width: 76%;
+}
+.listcountry{
+    margin: 0px;
+    width: 95%;
+}
+
+.content-weather form .error{
+    width: 75%;
+    height: 66%;
+    right: 12%;
+}
+.info{
+    width:75%;
+}
+.content-us form input[type="text"]{
+    width:70%;
+}
+.weather .header h3{
+    font-size: 13px;
+        margin-top: 19px;
+}
+}
+
+@media (max-width:540px){
+    .content-weather form .error{
+        width:60%;
+        right: 19%;
+    }
 }
